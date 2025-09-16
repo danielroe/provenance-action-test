@@ -1,15 +1,8 @@
 {
-  "name": "test-prov",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "packageManager": "pnpm@9.15.9",
+  "name": "provenance-action-test",
+  "private": true,
+  "author": "Daniel Roe <daniel@roe.dev>",
+  "license": "MIT",
   "dependencies": {
     "nuxt": "^3.0.0"
   }
