@@ -4,6 +4,6 @@
   "author": "Daniel Roe <daniel@roe.dev>",
   "license": "MIT",
   "dependencies": {
-    "nuxt": "^3.0.0"
+    "nuxt": "3.0.0"
   }
 }
