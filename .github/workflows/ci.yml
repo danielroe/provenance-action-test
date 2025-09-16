@@ -15,4 +15,4 @@ jobs:
         with:
           fetch-depth: 0
       - name: Check provenance downgrades
-        uses: danielroe/provenance-action
+        uses: danielroe/provenance-action@b8d91a9d9580e6d65f57b6b2e24175bfb9cf3d93
