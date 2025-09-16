@@ -1,0 +1,12 @@
+jobs:
+  check-provenance:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Check provenance downgrades
+        uses: ./
+        id: check
+      - name: Print result
+        run: echo "Downgraded: ${{ steps.check.outputs.downgraded }}"
