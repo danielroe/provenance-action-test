@@ -11,6 +11,8 @@ on:
       - pnpm
       - npm
       - yarn
+permissions:
+  contents: read
 jobs:
   check-provenance:
     runs-on: ubuntu-latest
