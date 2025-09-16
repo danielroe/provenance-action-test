@@ -1,3 +1,12 @@
+name: ci
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
 jobs:
   check-provenance:
     runs-on: ubuntu-latest
@@ -13,4 +22,4 @@ jobs:
           base-ref: origin/main    # optional, default: origin/main
           fail-on-downgrade: true  # optional, default: true
       - name: Print result
-        run: echo "Downgraded: ${{ steps.check.outputs.downgraded }}"
+        run: "echo Downgraded ${{ steps.check.outputs.downgraded }}"
