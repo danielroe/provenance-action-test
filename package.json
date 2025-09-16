@@ -9,7 +9,6 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "packageManager": "pnpm@9.15.9",
   "dependencies": {
     "nuxt": "^3.0.0"
   }
