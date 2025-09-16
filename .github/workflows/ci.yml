@@ -16,10 +16,3 @@ jobs:
           fetch-depth: 0
       - name: Check provenance downgrades
         uses: danielroe/oidc-action@8305e5c7ff3d529990f6356e23e577ae50e18d63
-        id: check
-        with:
-          lockfile: pnpm-lock.yaml # optional
-          base-ref: origin/main    # optional, default: origin/main
-          fail-on-downgrade: true  # optional, default: true
-      - name: Print result
-        run: "echo Downgraded ${{ steps.check.outputs.downgraded }}"
